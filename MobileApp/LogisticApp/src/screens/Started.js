@@ -1,15 +1,19 @@
 import React from 'react'
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import { ROUTES } from '../constants'
+import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
 const Getstarted = (props) => {
     return (
-        <TouchableOpacity onPress={()=> props.navigation.navigate(ROUTES.SIGN_UP)}>
-            <Text>fdasfsdfs</Text>
-        </TouchableOpacity>
+        <ScrollView style={styles.container}>
+            
+        </ScrollView>
     )
 }
 
 export default Getstarted
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container:{
+        backgroundColor:'red',
+        flex:1
+    }
+})
